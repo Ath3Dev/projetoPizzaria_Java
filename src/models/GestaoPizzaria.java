@@ -10,9 +10,19 @@ public class GestaoPizzaria {
 	}
 	
 	public void listarPizzarias() {
+		int id =0;
 		for(Pizzaria pizzaria : this.pizzaria) {
-			System.out.println(pizzaria.getNome());
+			id += 1;
+			System.out.println(id + ". " + pizzaria.getNome());
 		}
+	}
+
+	public ArrayList<Pizzaria> getPizzaria() {
+		return pizzaria;
+	}
+
+	public void setPizzaria(ArrayList<Pizzaria> pizzaria) {
+		this.pizzaria = pizzaria;
 	}
 	
 }
